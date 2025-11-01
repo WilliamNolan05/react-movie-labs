@@ -5,6 +5,7 @@ import HomePage from "./pages/homePage";
 import MoviePage from "./pages/movieDetailsPage";
 import FavoriteMoviesPage from "./pages/favoriteMoviesPage";
 import MovieReviewPage from "./pages/movieReviewPage";
+import TrendingTodayPage from "./pages/trendingTodayPage";
 
 
 const App = () => {
@@ -15,10 +16,14 @@ const App = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
+          <Link to="/movies/trending/today">Trending Today</Link>
+        </li>
+        <li>
           <Link to="/movies/favorites">Favorites</Link>
         </li>
       </ul>
       <Routes>
+        <Route path="/movies/trending/today" element={<TrendingTodayPage />} />
         <Route path="/movies/favorites" element={<FavoriteMoviesPage />} />
         <Route path="/movies/:id" element={<MoviePage />} />
         <Route path="/" element={<HomePage />} />
