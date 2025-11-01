@@ -40,11 +40,3 @@ export const getMovieReviews = (id) => {
       return json.results;
     });
 };
-
-export const getTrendingToday = () => {
-  return fetch(
-    `https://api.themoviedb.org/3/trending/movie/day?api_key=${import.meta.env.VITE_TMDB_KEY}`
-  )
-    .then((res) => res.json())
-    .then((json) => json.results);
-};
