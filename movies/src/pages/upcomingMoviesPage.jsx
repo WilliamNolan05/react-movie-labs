@@ -24,8 +24,8 @@ const UpcomingMoviesPage = (props) => {
   const movies = data.results;
 
   // Redundant, but necessary to avoid app crashing.
-  const favorites = movies.filter(m => m.favorite)
-  localStorage.setItem('playlist', JSON.stringify(favorites))
+  const playlist = movies.filter(m => m.playlist)
+  localStorage.setItem('playlist', JSON.stringify(playlist))
   const addToPlaylist = (movieId) => true
 
    return (
