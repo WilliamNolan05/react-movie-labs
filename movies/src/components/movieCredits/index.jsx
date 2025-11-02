@@ -48,13 +48,13 @@ export default function MovieCredits({ movie }) {
               <TableCell >{r.character}</TableCell>
               <TableCell >
               <Link
-                  to={`/credits/${r.id}`}
+                  to={`/personPage/${r.id}`}
                   state={{
                       credit: r,
                       movie: movie,
                   }}
                 >
-                  Full Credit
+                  More Info
                 </Link>
               </TableCell>
             </TableRow>
