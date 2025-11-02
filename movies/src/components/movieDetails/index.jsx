@@ -98,7 +98,7 @@ const MovieDetails = ({ movie }) => {
         }}
       >
         <PeopleIcon />
-        Cast & Crew
+        Cast
       </Fab>
 
       <Drawer anchor="top" open={drawerOpen} onClose={() => setDrawerOpen(false)}>
