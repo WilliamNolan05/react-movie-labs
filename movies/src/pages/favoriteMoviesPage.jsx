@@ -12,7 +12,7 @@ const FavoriteMoviesPage = () => {
 
       if (!movieIds || movieIds.length === 0) {
     return (
-      <div style={{ padding: '20px', textAlign: 'center' }}>
+      <div style={{ padding: '20px', textAlign: 'center' , fontFamily: 'Arial'}}>
         <h2>Your Favorites List is Empty</h2>
         <p>Add some movies to your favorites list to see them here!</p>
       </div>
